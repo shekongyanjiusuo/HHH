@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prectice flex</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: rgb(231, 231, 231);
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: rgb(233, 233, 233);
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .dingbulan {
+        padding: 8px;
+        font-size: 16px;
+      }
+      .rightstyle {
+        float: right;
+      }
+      .double {
+        border-style: double;
+      }
+    </style>
+  </head>
+  <body class="flex column">
+    <!--顶部栏-->
+    <div
+      style="
+        height: 200px;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-between;
+      "
+      class="dingbulan flex"
+    >
+      <!--logo-->
+      <img
+        style="float: left; align-items: center; justify-content; center"
+        src="图片2.png"
+        height="100px"
+        alt="logo"
+        margin="20px"
+      />
+      <!--按钮-->
+      <div style="justify-content: space-between; width: auto" class="flex">
+        <!--menu-->
+        <div style="padding: 20px">MENU</div>
+        <!--建筑专教-->
+        <div style="padding: 20px">建筑专教</div>
+        <!--留学-->
+        <div style="padding: 20px">留学</div>
+        <!--工作实习-->
+        <div style="padding: 20px">工作实习</div>
+        <!--极速工作流-->
+        <div style="padding: 20px">移动端</div>
+        <!--移动端-->
+        <div style="padding: 20px">移动端</div>
+        <!--sousuo-->
+        <div style="padding: 20px">搜索</div>
+        <!--登录-->
+        <div style="padding: 20px">登录</div>
+        <!--注册-->
+        <div style="padding: 20px">注册</div>
+      </div>
+    </div>
+    <!--广告栏-->
+    <div style="height: 150px" class="flex baise">
+      <img
+        src="长条.jpg"
+        alt="guanggaolan"
+        style="height: 150px; width: 100%"
+      />
+    </div>
+    <!--内容栏-->
+    <div style="overflow: auto" class="flex baise">
+      <!--作品栏-->
+      <div style="flex: 3; text-align: center; margin: 8px" class="flex column">
+        <div style="height: 80px">日期</div>
+        <div style="height: 500px">作品图片</div>
+        <div style="height: 80px">作品名称</div>
+        <div style="height: 80px">more</div>
+      </div>
+      <!--功能栏-->
+      <div style="flex: 1; margin: 8px" class="flex column">
+        <div style="overflow: aoto" class="double column">
+          <div style="height: 50px; text-align: center">作品</div>
+          <div style="height: 50px; text-align: center">经验</div>
+          <div style="height: 50px; text-align: center">咨询</div>
+          <div style="height: 50px; text-align: center">资料</div>
+          <div style="height: 50px; text-align: center">专题</div>
+          <div style="height: 50px; text-align: center">游/学 推荐</div>
+          <div style="height: 50px; text-align: center">视频</div>
+        </div>
+        <div style="height: 200px; text-align: center">工作实习动态图</div>
+      </div>
+    </div>
+    <div style="justify-content: center" class="flex">友情链接</div>
+  </body>
+</html>
